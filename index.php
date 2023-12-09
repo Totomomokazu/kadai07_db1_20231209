@@ -10,8 +10,8 @@
         <fieldset>
             <legend>本アンケート</legend>
             <label>本の名前：<input type="text" name="name"></label><br>
-            <label>紹介用リンク：<input type="text" name="email"></label><br>
-            <label><textarea name="content" id="" cols="30" rows="10"></textarea></label><br>
+            <label>紹介用リンク：<input type="text" name="url"></label><br>
+            <label><textarea name="comment" id="" cols="30" rows="10"></textarea></label><br>
             <input type="submit" value="送信">
         </fieldset>
     </form>    
