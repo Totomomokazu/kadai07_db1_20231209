@@ -27,13 +27,12 @@ if ($status==false) {
   //FETCH_ASSOC=http://php.net/manual/ja/pdostatement.fetch.php
   while( $result = $stmt->fetch(PDO::FETCH_ASSOC)){
     $view .= "<p>";
-    $view .= h($result["date"]) . h($result["name"]) . h($result["content"]);
+    $view .= h($result["name"]) . h($result["url"]) . h($result["comments"]). h($result["date"]);
     $view .= "</p>";
   }
-
 }
-
 ?>
+
 
 
 
@@ -47,6 +46,9 @@ if ($status==false) {
 </head>
 <body>
     <!-- データ表示エリア -->
+    <div>
+        <div class="container jumbotron"><?= $view ?></div>
+    </div>
 
 </body>
 </html>
